@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="menu-container">
+            <ul class="menu clearfix">
+                <li><a href="#">Nivel</a>
+                    <ul class="sub-menu clearfix">
+                        <li><a href="#" data-nivel="EASY"   onclick="setNivel(this);" class="menu-selected">Fácil</a></li>
+                        <li><a href="#" data-nivel="NORMAL" onclick="setNivel(this);">Normal</a></li>
+                        <li><a href="#" data-nivel="HARD"   onclick="setNivel(this);">Difícil</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" onclick="resetJogo();">Recomeçar</a></li>
+            </ul>
+        </div>
+
+        <div id="container">
+            <div id="resultado"></div>
+            <div id="jogo">
+                <div class="linha">
+                    <div class="casa" data-casa=1 id="casa-1"></div>
+                    <div class="casa" data-casa=2 id="casa-2"></div>
+                    <div class="casa" data-casa=3 id="casa-3"></div>
+                </div>
+                <div class="linha">
+                    <div class="casa" data-casa=4 id="casa-4"></div>
+                    <div class="casa" data-casa=5 id="casa-5"></div>
+                    <div class="casa" data-casa=6 id="casa-6"></div>
+                </div>
+                <div class="linha">
+                    <div class="casa" data-casa=7 id="casa-7"></div>
+                    <div class="casa" data-casa=8 id="casa-8"></div>
+                    <div class="casa" data-casa=9 id="casa-9"></div>
+                </div>
+            </div>
+            
+        <div>
+    </body>
+    <script type="text/javascript" src="script.js"></script>
+</html>
